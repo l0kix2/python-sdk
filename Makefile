@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: deps tox test test-all-versions help
+.PHONY: deps tox lint test test-all-versions help
 
 REPO_ROOT:=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 
@@ -12,6 +12,9 @@ tox: ## run ALL checks for ALL available python versions
 
 test: ## run tests ONLY for current python version
 	python -m pytest
+
+lint: ## run linters, formatters for current python versions
+	pylint yandexcloud
 
 test-all-versions: ## run test for multiple python versions using docker
 	# python 3.10 not provided in image so we skip it

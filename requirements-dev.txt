@@ -1,4 +1,5 @@
 -e .
+pylint
 pytest
 tox
 tox-gh-actions
