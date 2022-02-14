@@ -643,7 +643,7 @@ class Dataproc(object):
     ):
         """
         Run Pyspark job in Yandex.Cloud Data Proc cluster.
-        
+
         :param main_python_file_uri: URI of python file with job. Can be placed in HDFS or S3.
         :type main_python_file_uri: str
         :param python_file_uris: URIs of python files used in the job. Can be placed in HDFS or S3.
@@ -660,7 +660,7 @@ class Dataproc(object):
         :type args: List[str]
         :param cluster_id: ID of the cluster to run job in.
                            Will try to take the ID from Dataproc Hook object if ot specified.
-        :type cluster_id: str        
+        :type cluster_id: str
         :param name: Name of the job. Used for labeling.
         :type name: str
         :param packages: List of maven coordinates of jars to include on the driver and executor classpaths.
