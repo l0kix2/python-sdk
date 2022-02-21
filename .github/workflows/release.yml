@@ -18,7 +18,8 @@ jobs:
 
     - name: Python Semantic Release
       run: |
-        make deps
+        python -m pip install --upgrade pip
+        python -m pip install python-semantic-release
         make release
 #      with:
 #        github_token: ${{ secrets.GITHUB_TOKEN }}
