@@ -18,6 +18,7 @@ jobs:
 
     - name: Python Semantic Release
       run: |
+        make deps
         make release
 #      with:
 #        github_token: ${{ secrets.GITHUB_TOKEN }}
