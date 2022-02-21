@@ -18,7 +18,7 @@ test-all-versions: ## run test for multiple python versions using docker
 	docker run --rm -v $(REPO_ROOT):/src fkrull/multi-python tox -c /src -e py36,py37,py38,py39
 
 release:  ## update changelog, bump version, build and publish package to pypi
-	python -m semantic_release publish
+	python -m semantic_release publish --minor
 
 help: ## Show help message
 	@IFS=$$'\n' ; \
