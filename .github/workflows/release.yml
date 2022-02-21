@@ -25,7 +25,6 @@ jobs:
         git config --global user.email 'yc-github-actions[bot]@users.noreply.github.com'
 
         make release
-#      with:
-#        github_token: ${{ secrets.GITHUB_TOKEN }}
-#        repository_username: __token__
-#        repository_password: ${{ secrets.PYPI_TOKEN }}
+      with:
+        repository_username: __token__
+        repository_password: ${{ secrets.PYPI_TOKEN }}
