@@ -18,7 +18,7 @@ test-all-versions: ## run test for multiple python versions using docker
 	docker run --rm -v $(REPO_ROOT):/src fkrull/multi-python tox -c /src -e py36,py37,py38,py39
 
 submodule:  ## update submodules
-	git submodule update
+	git submodule update --init --recursive --remote
 
 proto:  ## regenerate code from protobuf
 	rm -rf yandex
