@@ -3,6 +3,7 @@
 # source: yandex/cloud/certificatemanager/v1/certificate_content_service.proto
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
+from google.protobuf import descriptor_pool as _descriptor_pool
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
@@ -14,100 +15,12 @@ _sym_db = _symbol_database.Default()
 from google.api import annotations_pb2 as google_dot_api_dot_annotations__pb2
 
 
-DESCRIPTOR = _descriptor.FileDescriptor(
-  name='yandex/cloud/certificatemanager/v1/certificate_content_service.proto',
-  package='yandex.cloud.certificatemanager.v1',
-  syntax='proto3',
-  serialized_options=b'\n&yandex.cloud.api.certificatemanager.v1ZYgithub.com/yandex-cloud/go-genproto/yandex/cloud/certificatemanager/v1;certificatemanager',
-  create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\nDyandex/cloud/certificatemanager/v1/certificate_content_service.proto\x12\"yandex.cloud.certificatemanager.v1\x1a\x1cgoogle/api/annotations.proto\"g\n\x1dGetCertificateContentResponse\x12\x16\n\x0e\x63\x65rtificate_id\x18\x01 \x01(\t\x12\x19\n\x11\x63\x65rtificate_chain\x18\x03 \x03(\t\x12\x13\n\x0bprivate_key\x18\x04 \x01(\t\"6\n\x1cGetCertificateContentRequest\x12\x16\n\x0e\x63\x65rtificate_id\x18\x01 \x01(\t2\xf2\x01\n\x19\x43\x65rtificateContentService\x12\xd4\x01\n\x03Get\x12@.yandex.cloud.certificatemanager.v1.GetCertificateContentRequest\x1a\x41.yandex.cloud.certificatemanager.v1.GetCertificateContentResponse\"H\x82\xd3\xe4\x93\x02\x42\x12@/certificate-manager/v1/certificates/{certificate_id}:getContentB\x83\x01\n&yandex.cloud.api.certificatemanager.v1ZYgithub.com/yandex-cloud/go-genproto/yandex/cloud/certificatemanager/v1;certificatemanagerb\x06proto3'
-  ,
-  dependencies=[google_dot_api_dot_annotations__pb2.DESCRIPTOR,])
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\nDyandex/cloud/certificatemanager/v1/certificate_content_service.proto\x12\"yandex.cloud.certificatemanager.v1\x1a\x1cgoogle/api/annotations.proto\"g\n\x1dGetCertificateContentResponse\x12\x16\n\x0e\x63\x65rtificate_id\x18\x01 \x01(\t\x12\x19\n\x11\x63\x65rtificate_chain\x18\x03 \x03(\t\x12\x13\n\x0bprivate_key\x18\x04 \x01(\t\"6\n\x1cGetCertificateContentRequest\x12\x16\n\x0e\x63\x65rtificate_id\x18\x01 \x01(\t2\xf2\x01\n\x19\x43\x65rtificateContentService\x12\xd4\x01\n\x03Get\x12@.yandex.cloud.certificatemanager.v1.GetCertificateContentRequest\x1a\x41.yandex.cloud.certificatemanager.v1.GetCertificateContentResponse\"H\x82\xd3\xe4\x93\x02\x42\x12@/certificate-manager/v1/certificates/{certificate_id}:getContentB\x83\x01\n&yandex.cloud.api.certificatemanager.v1ZYgithub.com/yandex-cloud/go-genproto/yandex/cloud/certificatemanager/v1;certificatemanagerb\x06proto3')
 
 
 
-
-_GETCERTIFICATECONTENTRESPONSE = _descriptor.Descriptor(
-  name='GetCertificateContentResponse',
-  full_name='yandex.cloud.certificatemanager.v1.GetCertificateContentResponse',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  create_key=_descriptor._internal_create_key,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='certificate_id', full_name='yandex.cloud.certificatemanager.v1.GetCertificateContentResponse.certificate_id', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='certificate_chain', full_name='yandex.cloud.certificatemanager.v1.GetCertificateContentResponse.certificate_chain', index=1,
-      number=3, type=9, cpp_type=9, label=3,
-      has_default_value=False, default_value=[],
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='private_key', full_name='yandex.cloud.certificatemanager.v1.GetCertificateContentResponse.private_key', index=2,
-      number=4, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=138,
-  serialized_end=241,
-)
-
-
-_GETCERTIFICATECONTENTREQUEST = _descriptor.Descriptor(
-  name='GetCertificateContentRequest',
-  full_name='yandex.cloud.certificatemanager.v1.GetCertificateContentRequest',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  create_key=_descriptor._internal_create_key,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='certificate_id', full_name='yandex.cloud.certificatemanager.v1.GetCertificateContentRequest.certificate_id', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=243,
-  serialized_end=297,
-)
-
-DESCRIPTOR.message_types_by_name['GetCertificateContentResponse'] = _GETCERTIFICATECONTENTRESPONSE
-DESCRIPTOR.message_types_by_name['GetCertificateContentRequest'] = _GETCERTIFICATECONTENTREQUEST
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
-
+_GETCERTIFICATECONTENTRESPONSE = DESCRIPTOR.message_types_by_name['GetCertificateContentResponse']
+_GETCERTIFICATECONTENTREQUEST = DESCRIPTOR.message_types_by_name['GetCertificateContentRequest']
 GetCertificateContentResponse = _reflection.GeneratedProtocolMessageType('GetCertificateContentResponse', (_message.Message,), {
   'DESCRIPTOR' : _GETCERTIFICATECONTENTRESPONSE,
   '__module__' : 'yandex.cloud.certificatemanager.v1.certificate_content_service_pb2'
@@ -122,32 +35,17 @@ GetCertificateContentRequest = _reflection.GeneratedProtocolMessageType('GetCert
   })
 _sym_db.RegisterMessage(GetCertificateContentRequest)
 
+_CERTIFICATECONTENTSERVICE = DESCRIPTOR.services_by_name['CertificateContentService']
+if _descriptor._USE_C_DESCRIPTORS == False:
 
-DESCRIPTOR._options = None
-
-_CERTIFICATECONTENTSERVICE = _descriptor.ServiceDescriptor(
-  name='CertificateContentService',
-  full_name='yandex.cloud.certificatemanager.v1.CertificateContentService',
-  file=DESCRIPTOR,
-  index=0,
-  serialized_options=None,
-  create_key=_descriptor._internal_create_key,
-  serialized_start=300,
-  serialized_end=542,
-  methods=[
-  _descriptor.MethodDescriptor(
-    name='Get',
-    full_name='yandex.cloud.certificatemanager.v1.CertificateContentService.Get',
-    index=0,
-    containing_service=None,
-    input_type=_GETCERTIFICATECONTENTREQUEST,
-    output_type=_GETCERTIFICATECONTENTRESPONSE,
-    serialized_options=b'\202\323\344\223\002B\022@/certificate-manager/v1/certificates/{certificate_id}:getContent',
-    create_key=_descriptor._internal_create_key,
-  ),
-])
-_sym_db.RegisterServiceDescriptor(_CERTIFICATECONTENTSERVICE)
-
-DESCRIPTOR.services_by_name['CertificateContentService'] = _CERTIFICATECONTENTSERVICE
-
+  DESCRIPTOR._options = None
+  DESCRIPTOR._serialized_options = b'\n&yandex.cloud.api.certificatemanager.v1ZYgithub.com/yandex-cloud/go-genproto/yandex/cloud/certificatemanager/v1;certificatemanager'
+  _CERTIFICATECONTENTSERVICE.methods_by_name['Get']._options = None
+  _CERTIFICATECONTENTSERVICE.methods_by_name['Get']._serialized_options = b'\202\323\344\223\002B\022@/certificate-manager/v1/certificates/{certificate_id}:getContent'
+  _GETCERTIFICATECONTENTRESPONSE._serialized_start=138
+  _GETCERTIFICATECONTENTRESPONSE._serialized_end=241
+  _GETCERTIFICATECONTENTREQUEST._serialized_start=243
+  _GETCERTIFICATECONTENTREQUEST._serialized_end=297
+  _CERTIFICATECONTENTSERVICE._serialized_start=300
+  _CERTIFICATECONTENTSERVICE._serialized_end=542
 # @@protoc_insertion_point(module_scope)

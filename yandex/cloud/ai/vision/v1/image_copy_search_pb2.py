@@ -3,6 +3,7 @@
 # source: yandex/cloud/ai/vision/v1/image_copy_search.proto
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
+from google.protobuf import descriptor_pool as _descriptor_pool
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
@@ -13,114 +14,12 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor.FileDescriptor(
-  name='yandex/cloud/ai/vision/v1/image_copy_search.proto',
-  package='yandex.cloud.ai.vision.v1',
-  syntax='proto3',
-  serialized_options=b'\n\035yandex.cloud.api.ai.vision.v1ZDgithub.com/yandex-cloud/go-genproto/yandex/cloud/ai/vision/v1;vision',
-  create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n1yandex/cloud/ai/vision/v1/image_copy_search.proto\x12\x19yandex.cloud.ai.vision.v1\"j\n\x19ImageCopySearchAnnotation\x12\x12\n\ncopy_count\x18\x01 \x01(\x03\x12\x39\n\x0btop_results\x18\x02 \x03(\x0b\x32$.yandex.cloud.ai.vision.v1.CopyMatch\"T\n\tCopyMatch\x12\x11\n\timage_url\x18\x01 \x01(\t\x12\x10\n\x08page_url\x18\x02 \x01(\t\x12\r\n\x05title\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\tBe\n\x1dyandex.cloud.api.ai.vision.v1ZDgithub.com/yandex-cloud/go-genproto/yandex/cloud/ai/vision/v1;visionb\x06proto3'
-)
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1yandex/cloud/ai/vision/v1/image_copy_search.proto\x12\x19yandex.cloud.ai.vision.v1\"j\n\x19ImageCopySearchAnnotation\x12\x12\n\ncopy_count\x18\x01 \x01(\x03\x12\x39\n\x0btop_results\x18\x02 \x03(\x0b\x32$.yandex.cloud.ai.vision.v1.CopyMatch\"T\n\tCopyMatch\x12\x11\n\timage_url\x18\x01 \x01(\t\x12\x10\n\x08page_url\x18\x02 \x01(\t\x12\r\n\x05title\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\tBe\n\x1dyandex.cloud.api.ai.vision.v1ZDgithub.com/yandex-cloud/go-genproto/yandex/cloud/ai/vision/v1;visionb\x06proto3')
 
 
 
-
-_IMAGECOPYSEARCHANNOTATION = _descriptor.Descriptor(
-  name='ImageCopySearchAnnotation',
-  full_name='yandex.cloud.ai.vision.v1.ImageCopySearchAnnotation',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  create_key=_descriptor._internal_create_key,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='copy_count', full_name='yandex.cloud.ai.vision.v1.ImageCopySearchAnnotation.copy_count', index=0,
-      number=1, type=3, cpp_type=2, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='top_results', full_name='yandex.cloud.ai.vision.v1.ImageCopySearchAnnotation.top_results', index=1,
-      number=2, type=11, cpp_type=10, label=3,
-      has_default_value=False, default_value=[],
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=80,
-  serialized_end=186,
-)
-
-
-_COPYMATCH = _descriptor.Descriptor(
-  name='CopyMatch',
-  full_name='yandex.cloud.ai.vision.v1.CopyMatch',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  create_key=_descriptor._internal_create_key,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='image_url', full_name='yandex.cloud.ai.vision.v1.CopyMatch.image_url', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='page_url', full_name='yandex.cloud.ai.vision.v1.CopyMatch.page_url', index=1,
-      number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='title', full_name='yandex.cloud.ai.vision.v1.CopyMatch.title', index=2,
-      number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='description', full_name='yandex.cloud.ai.vision.v1.CopyMatch.description', index=3,
-      number=4, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=188,
-  serialized_end=272,
-)
-
-_IMAGECOPYSEARCHANNOTATION.fields_by_name['top_results'].message_type = _COPYMATCH
-DESCRIPTOR.message_types_by_name['ImageCopySearchAnnotation'] = _IMAGECOPYSEARCHANNOTATION
-DESCRIPTOR.message_types_by_name['CopyMatch'] = _COPYMATCH
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
-
+_IMAGECOPYSEARCHANNOTATION = DESCRIPTOR.message_types_by_name['ImageCopySearchAnnotation']
+_COPYMATCH = DESCRIPTOR.message_types_by_name['CopyMatch']
 ImageCopySearchAnnotation = _reflection.GeneratedProtocolMessageType('ImageCopySearchAnnotation', (_message.Message,), {
   'DESCRIPTOR' : _IMAGECOPYSEARCHANNOTATION,
   '__module__' : 'yandex.cloud.ai.vision.v1.image_copy_search_pb2'
@@ -135,6 +34,12 @@ CopyMatch = _reflection.GeneratedProtocolMessageType('CopyMatch', (_message.Mess
   })
 _sym_db.RegisterMessage(CopyMatch)
 
+if _descriptor._USE_C_DESCRIPTORS == False:
 
-DESCRIPTOR._options = None
+  DESCRIPTOR._options = None
+  DESCRIPTOR._serialized_options = b'\n\035yandex.cloud.api.ai.vision.v1ZDgithub.com/yandex-cloud/go-genproto/yandex/cloud/ai/vision/v1;vision'
+  _IMAGECOPYSEARCHANNOTATION._serialized_start=80
+  _IMAGECOPYSEARCHANNOTATION._serialized_end=186
+  _COPYMATCH._serialized_start=188
+  _COPYMATCH._serialized_end=272
 # @@protoc_insertion_point(module_scope)
