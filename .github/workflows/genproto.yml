@@ -14,8 +14,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      with:
-          token: ${{ secrets.YANDEX_CLOUD_BOT_TOKEN }}
+#      with:
+#          token: ${{ secrets.YANDEX_CLOUD_BOT_TOKEN }}
 
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -27,9 +27,10 @@ jobs:
         make submodule
         make deps
         make proto
+        make tox && echo "Tests or linters failed, will not commit"
         
-        git config --global user.name 'Yandex.Cloud Bot'
-        git config --global user.email 'ycloud-bot@yandex.ru'
-        git add yandex cloudapi
-        git commit -m 'regenerate proto' || echo "No changes in .proto files found"
-        git push
+#        git config --global user.name 'Yandex.Cloud Bot'
+#        git config --global user.email 'ycloud-bot@yandex.ru'
+#        git add yandex cloudapi
+#        git commit -m 'regenerate proto' || echo "No changes in .proto files found"
+#        git push
