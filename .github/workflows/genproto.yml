@@ -27,6 +27,7 @@ jobs:
         make submodule
         make deps
         make proto
+        make tox && echo "Tests or linters failed, will not commit"
         
         git config --global user.name 'Yandex.Cloud Bot'
         git config --global user.email 'ycloud-bot@yandex.ru'
