@@ -2,6 +2,9 @@
 
 <!--next-version-placeholder-->
 
+## v0.167.0 (2022-06-27)
+
+
 ## v0.166.0 (2022-06-21)
 ### Feature
 * Regenerate proto
