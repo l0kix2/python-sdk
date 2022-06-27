@@ -2,6 +2,9 @@
 
 <!--next-version-placeholder-->
 
+## v0.168.0 (2022-06-27)
+
+
 ## v0.167.0 (2022-06-27)
 ### Feature
 * Freeze protobuf lib in dependencies
