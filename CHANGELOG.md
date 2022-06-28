@@ -2,6 +2,9 @@
 
 <!--next-version-placeholder-->
 
+## v0.170.0 (2022-06-28)
+
+
 ## v0.169.0 (2022-06-28)
 ### Feature
 * Separate genproto deps from test deps
